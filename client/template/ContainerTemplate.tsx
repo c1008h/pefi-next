@@ -9,7 +9,7 @@ interface ContainerTemplateProps{
 
 export default function ContainerTemplate({ children, title, style, row}:ContainerTemplateProps) {
   return (
-    <>
+    <div className="container" >
       <h2>{title}</h2>
 
       {/* {!row ? (
@@ -18,6 +18,6 @@ export default function ContainerTemplate({ children, title, style, row}:Contain
           children
         )} */}
         {children}
-    </>
+    </div>
   )
 }

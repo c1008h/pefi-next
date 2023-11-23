@@ -16,8 +16,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="flex flex-row">
-        <ul>
+    <nav className="container flex flex-row justify-center items-center bg-cyan-900 w-full m-0">
+        <ul className='flex items-center space-x-4'>
             <li>Pefi</li>
             {isLogged ? (
               <>
