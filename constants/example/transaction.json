@@ -1,0 +1,108 @@
+[
+    {
+        "id": 1,
+        "type": "Income",
+        "category": "Salary",
+        "date": "2023-09-01",
+        "amount": 5000
+    },
+    {
+        "id": 2,
+        "type": "Expense",
+        "category": "Groceries",
+        "date": "2023-09-03",
+        "amount": 150
+    },
+    {
+        "id": 3,
+        "type": "Expense",
+        "category": "Utilities",
+        "date": "2023-09-05",
+        "amount": 75
+    },
+    {
+        "id": 4,
+        "type": "Expense",
+        "category": "Health & Fitness",
+        "date": "2023-09-07",
+        "amount": 40
+    },
+    {
+        "id": 5,
+        "type": "Expense",
+        "category": "Education",
+        "date": "2023-09-10",
+        "amount": 200
+    },
+    {
+        "id": 6,
+        "type": "Income",
+        "category": "Investment",
+        "date": "2023-09-11",
+        "amount": 300
+    },
+    {
+        "id": 7,
+        "type": "Expense",
+        "category": "Dining",
+        "date": "2023-09-12",
+        "amount": 60
+    },
+    {
+        "id": 8,
+        "type": "Expense",
+        "category": "Entertainment",
+        "date": "2023-09-14",
+        "amount": 120
+    },
+    {
+        "id": 9,
+        "type": "Income",
+        "category": "Freelancing",
+        "date": "2023-09-15",
+        "amount": 1500
+    },
+    {
+        "id": 10,
+        "type": "Expense",
+        "category": "Travel",
+        "date": "2023-09-16",
+        "amount": 300
+    },
+    {
+        "id": 11,
+        "type": "Expense",
+        "category": "Clothing",
+        "date": "2023-09-18",
+        "amount": 100
+    },
+    {
+        "id": 12,
+        "type": "Income",
+        "category": "Rental Income",
+        "date": "2023-09-20",
+        "amount": 1000
+    },
+    {
+        "id": 13,
+        "type": "Expense",
+        "category": "Insurance",
+        "date": "2023-09-22",
+        "amount": 250
+    },
+    {
+        "id": 14,
+        "type": "Expense",
+        "category": "Pet Care",
+        "date": "2023-09-25",
+        "amount": 80
+    },
+    {
+        "id": 15,
+        "type": "Income",
+        "category": "Bonus",
+        "date": "2023-09-27",
+        "amount": 750
+    }
+]
+

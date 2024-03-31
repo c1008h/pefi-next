@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "type": "Checking",
+        "name": "Checking Account",
+        "balance": 3250.30
+    },
+    {
+        "id": 2,
+        "type": "Savings",
+        "name": "Savings Account",
+        "balance": 10000.00
+    },
+    {
+        "id": 3,
+        "type": "Credit",
+        "name": "Credit Card",
+        "balance": -500.00
+    }
+]

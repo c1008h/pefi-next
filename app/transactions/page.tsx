@@ -1,16 +1,17 @@
 "use client"
 import React, { useState } from 'react'
 import { Layout } from '@/components'
+import transactions from '@/constants/example/transaction.json'
 
 export default function Transactions() {
-  const [selectedMonth, setSelectedMonth] = useState<Date>(new Date().getMonth() + 1);
+    const [selectedMonth, setSelectedMonth] = useState<Date>(new Date().getMonth() + 1);
 
-  const handleMonthChange = (event: { target: { value: React.SetStateAction<Date>; }; }) => {
-    setSelectedMonth(event.target.value);
-  };
+    const handleMonthChange = (event: { target: { value: React.SetStateAction<Date>; }; }) => {
+        setSelectedMonth(event.target.value);
+    };
 
-  return (
-    <Layout>
+    return (
+        <Layout>
             <div className="p-4">
                 <h1 className="text-2xl font-bold text-gray-800">Transactions</h1>
 
@@ -45,22 +46,22 @@ export default function Transactions() {
                             </tr>
                         </thead>
                         <tbody className="text-gray-600 text-sm font-light">
-                            {/* Data rows for transactions will be dynamically inserted here */}
-                            <tr className="border-b border-gray-200 hover:bg-gray-100">
-                                <td className="py-3 px-6 text-left">03/15/2024</td>
-                                <td className="py-3 px-6 text-left">Groceries</td>
-                                <td className="py-3 px-6 text-center">-$150.00</td>
-                                <td className="py-3 px-6 text-center">Expense</td>
-                                <td className="py-3 px-6 text-center">Food & Dining</td>
-                                <td className="py-3 px-6 text-center">
-                                    <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
-                                </td>
-                            </tr>
-                            {/* Repeat for each transaction */}
+                            {transactions.map((transaction) => (
+                                <tr className="border-b border-gray-200 hover:bg-gray-100" key={transaction.id}>
+                                    <td className="py-3 px-6 text-left">{transaction.date}</td>
+                                    <td className="py-3 px-6 text-left">{transaction.category}</td>
+                                    <td className="py-3 px-6 text-center">{transaction.amount}</td>
+                                    <td className="py-3 px-6 text-center">{transaction.type}</td>
+                                    <td className="py-3 px-6 text-center">{transaction.category}</td>
+                                    <td className="py-3 px-6 text-center">
+                                        <button className="bg-red-500 text-white px-3 py-1 rounded hover:bg-red-600">Delete</button>
+                                    </td>
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
             </div>
         </Layout>
-  )
+    )
 }

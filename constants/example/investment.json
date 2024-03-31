@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "type": "Stock",
+        "name": "Tech Giants Fund",
+        "currentValue": 15000,
+        "growth": 5
+    },
+    {
+        "id": 2,
+        "type": "Bond",
+        "name": "Government Bonds",
+        "currentValue": 5000,
+        "growth": 2
+    },
+    {
+        "id": 3,
+        "type": "Real Estate",
+        "name": "Rental Property",
+        "currentValue": 300000,
+        "growth": 3
+    }
+]
