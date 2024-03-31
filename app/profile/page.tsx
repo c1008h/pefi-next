@@ -1,9 +1,10 @@
 import React from 'react'
+import { Layout } from '@/components'
 
 export default function Profile() {
   return (
-    <div>
-      
-    </div>
+    <Layout>
+      <div>Profile</div>
+    </Layout>
   )
 }

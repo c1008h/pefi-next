@@ -1,10 +1,10 @@
 import React from 'react'
 import { Layout } from '@/components'
 
-export default function Goals() {
+export default function Investments() {
   return (
     <Layout>
-      <div>Goals</div>
+      <div>Investments</div>
     </Layout>
   )
 }
