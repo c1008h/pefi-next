@@ -32,7 +32,7 @@ export default function SideNav({ className, showNav, setShowNav }: SideNavProps
                     <Link href='/budgets'><li className="py-2 hover:bg-gray-700">Budgets</li></Link>
                     <Link href='/goals'><li className="py-2 hover:bg-gray-700">Goals</li></Link>
                     <Link href='/investments'><li className="py-2 hover:bg-gray-700">Investments</li></Link>
-                    <Link href='/report'><li className="py-2 hover:bg-gray-700">Reports/Analytics</li></Link>
+                    <Link href='/reports'><li className="py-2 hover:bg-gray-700">Reports/Analytics</li></Link>
                     <Link href='/settings'><li className="py-2 hover:bg-gray-700">Settings</li></Link>
                     <Link href='/support'><li className="py-2 hover:bg-gray-700">Support/Help Center</li></Link>
                     <Link href='/profile'><li className="py-2 hover:bg-gray-700">Profile</li></Link>
