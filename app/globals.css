@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 19, 20, 21; /* Dark text for light mode */
+  --background-start-rgb: 237, 241, 247; /* Lighter background for a professional look */
+  --background-end-rgb: 255, 255, 255; /* Pure white for clean feel */
+  --primary-color-rgb: 3, 102, 214; /* Blue for trust and professionalism */
+  --secondary-color-rgb: 35, 178, 190; /* Complementary color for accents */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 255, 255, 255; /* White text for dark mode */
+    --background-start-rgb: 13, 17, 23; /* Dark background for dark mode */
+    --background-end-rgb: 28, 33, 40; /* Slightly lighter for gradient end */
+    --primary-color-rgb: 79, 169, 221; /* Lighter blue for visibility in dark mode */
+    --secondary-color-rgb: 50, 199, 212; /* Brighter complementary color for dark mode */
   }
 }
 
@@ -20,14 +24,36 @@ body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
-      transparent,
+      rgb(var(--background-start-rgb)),
       rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    );
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .btn-primary {
+    background-color: rgb(var(--primary-color-rgb));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+
+  .btn-primary:hover {
+    background-color: rgb(var(--primary-color-rgb) / 0.8);
+  }
+
+  .btn-secondary {
+    background-color: rgb(var(--secondary-color-rgb));
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+
+  .btn-secondary:hover {
+    background-color: rgb(var(--secondary-color-rgb) / 0.8);
   }
 }

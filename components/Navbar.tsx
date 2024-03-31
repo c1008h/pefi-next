@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Finance() {
+export default function Navbar() {
   return (
     <div>
       
