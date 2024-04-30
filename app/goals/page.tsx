@@ -11,7 +11,6 @@ export default function Goals() {
                         Add Goal
                     </button>
                 </div>
-
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {/* Example Goal Card */}
                     <div className="bg-white shadow rounded-lg p-4">
