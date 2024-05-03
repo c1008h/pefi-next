@@ -1,9 +1,13 @@
 import React from 'react'
 
-export default function ButtonTemplate() {
+interface ButtonTemplateProps {
+    text: string;
+}
+
+export default function ButtonTemplate({ text }: ButtonTemplateProps) {
   return (
-    <div>
-      
-    </div>
+    <button>
+      {text}
+    </button>
   )
 }
