@@ -2,11 +2,12 @@ import React from 'react'
 
 interface ButtonTemplateProps {
     text: string;
+    onClick: () => void;
 }
 
-export default function ButtonTemplate({ text }: ButtonTemplateProps) {
+export default function ButtonTemplate({ text, onClick }: ButtonTemplateProps) {
   return (
-    <button>
+    <button onClick={onClick}>
       {text}
     </button>
   )
