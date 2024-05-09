@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '@/components'
+import { Layout, ButtonTemplate } from '@/components'
 
 export default function Goals() {
   return (
@@ -20,12 +20,22 @@ export default function Goals() {
                             <div className="bg-blue-500 h-2.5 rounded-full" style={{ width: '40%' }}></div>
                         </div>
                         <div className="mt-2 flex justify-between">
-                            <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-1 px-2 rounded text-xs">
+                            <ButtonTemplate
+                                onClick={() => {}} 
+                                text={'Edit'} 
+                                btnStyle={'bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-1 px-2 rounded text-xs'}
+                            />
+                            <ButtonTemplate
+                                onClick={() => {}} 
+                                text={'Delete'}
+                                btnStyle={'bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs'}
+                            />
+                            {/* <button className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-1 px-2 rounded text-xs">
                                 Edit
-                            </button>
-                            <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
+                            </button> */}
+                            {/* <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded text-xs">
                                 Delete
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                     
